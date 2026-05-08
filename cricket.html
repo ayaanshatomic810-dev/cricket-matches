@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Cricket Matches</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🏏 Cricket Matches</h1>
+            <p class="subtitle">Stay updated with the latest cricket matches</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="live">Live</button>
+                <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div id="matches-container" class="matches-grid">
+                <!-- Matches will be loaded here -->
+                <div class="loading">Loading matches...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cricket Matches Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
