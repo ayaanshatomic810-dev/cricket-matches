@@ -2,21 +2,21 @@
 const matchesData = [
     {
         id: 1,
-        team1: { name: 'India', flag: '🇮🇳', score: '185' },
-        team2: { name: 'Australia', flag: '🇦🇺', score: '156' },
-        status: 'live',
+        team1: { name: 'India', flag: '🇮🇳', score: '255/5' },
+        team2: { name: 'Newzealand', flag: '🇳🇿', score: '159' },
+        status: 'recent',
         format: 'T20I',
-        venue: 'MCG, Melbourne',
-        startTime: '2026-05-08 14:00 IST'
+        venue: ' Narendra Modi Stadium, Ahmedabad',
+        startTime: '19:00 (7:00 PM) UTC+5:30'
     },
     {
         id: 2,
-        team1: { name: 'Pakistan', flag: '🇵🇰', score: '142' },
-        team2: { name: 'England', flag: '🇬����', score: '0' },
-        status: 'upcoming',
-        format: 'ODI',
-        venue: 'Old Trafford, Manchester',
-        startTime: '2026-05-09 16:30 UTC'
+        team1: { name: 'India', flag: '🇮🇳', score: '253/7' },
+        team2: { name: 'England', flag: '🇬🇧', score: '246/7' },
+        status: 'recent',
+        format: 'T20I',
+        venue: 'Wankhede Stadium, Mumbai ',
+        startTime: 'March 5 at 7:00 PM IS'
     },
     {
         id: 3,
