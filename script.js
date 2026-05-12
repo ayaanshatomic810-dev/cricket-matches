@@ -1,77 +1,69 @@
-// Sample cricket matches data
-const matchesData = [
-    {
-        id: 1,
-        team1: { name: 'India', flag: '🇮🇳', score: '255/5' },
-        team2: { name: 'Newzealand', flag: '🇳🇿', score: '159' },
-        status: 'recent',
-        format: 'T20I',
-        venue: ' Narendra Modi Stadium, Ahmedabad',
-        startTime: '19:00 (7:00 PM) UTC+5:30'
+/**
+ * IPL 2026 Recent Match Results
+ * Data reflects the matches completed as of May 12, 2026.
+ */
+
+const iplMatchResults = [
+  {
+    matchNumber: 56,
+    date: "2026-05-12",
+    venue: "Narendra Modi Stadium, Ahmedabad",
+    team1: {
+      name: "Gujarat Titans",
+      short: "GT",
+      logo: "https://iplt20.com", // Example Official Path
+      score: "168/5 (20.0)"
     },
-    {
-        id: 2,
-        team1: { name: 'India', flag: '🇮🇳', score: '253/7' },
-        team2: { name: 'England', flag: '🇬🇧', score: '246/7' },
-        status: 'recent',
-        format: 'T20I',
-        venue: 'Wankhede Stadium, Mumbai ',
-        startTime: 'March 5 at 7:00 PM IS'
+    team2: {
+      name: "Sunrisers Hyderabad",
+      short: "SRH",
+      logo: "https://iplt20.com",
+      score: "86 (14.5)"
     },
-    {
-        id: 3,
-        team1: { name: 'South Africa', flag: '🇿🇦', score: '287' },
-        team2: { name: 'New Zealand', flag: '🇳��', score: '245' },
-        status: 'completed',
-        format: 'Test',
-        venue: 'Wanderers, Johannesburg',
-        startTime: '2026-05-06 10:00 SAST'
+    outcome: "Gujarat Titans won by 82 runs"
+  },
+  {
+    matchNumber: 55,
+    date: "2026-05-11",
+    venue: "HPCA Stadium, Dharamshala",
+    team1: {
+      name: "Punjab Kings",
+      short: "PBKS",
+      logo: "https://iplt20.com",
+      score: "210/5 (20.0)"
     },
-    {
-        id: 4,
-        team1: { name: 'Sri Lanka', flag: '🇱🇰', score: '168' },
-        team2: { name: 'Bangladesh', flag: '🇧🇩', score: '165' },
-        status: 'live',
-        format: 'T20I',
-        venue: 'Dambulla International Cricket Ground',
-        startTime: '2026-05-08 19:00 IST'
+    team2: {
+      name: "Delhi Capitals",
+      short: "DC",
+      logo: "https://iplt20.com",
+      score: "216/7 (19.0)"
     },
-    {
-        id: 5,
-        team1: { name: 'West Indies', flag: '🏝️', score: '0' },
-        team2: { name: 'Afghanistan', flag: '🇦🇫', score: '0' },
-        status: 'upcoming',
-        format: 'T20I',
-        venue: 'Providence Stadium, Guyana',
-        startTime: '2026-05-10 20:00 AST'
+    outcome: "Delhi Capitals won by 3 wickets"
+  },
+  {
+    matchNumber: 54,
+    date: "2026-05-10",
+    venue: "Shaheed Veer Narayan Singh Stadium, Raipur",
+    team1: {
+      name: "Royal Challengers Bengaluru",
+      short: "RCB",
+      logo: "https://iplt20.com",
+      score: "167/8 (20.0)"
     },
-    {
-        id: 6,
-        team1: { name: 'Ireland', flag: '🇮🇪', score: '156' },
-        team2: { name: 'Netherlands', flag: '🇳🇱', score: '142' },
-        status: 'completed',
-        format: 'ODI',
-        venue: 'Malahide, Dublin',
-        startTime: '2026-05-05 14:00 IST'
+    team2: {
+      name: "Mumbai Indians",
+      short: "MI",
+      logo: "https://iplt20.com",
+      score: "166/7 (20.0)"
     },
-    {
-        id: 7,
-        team1: { name: 'Zimbabwe', flag: '🇿🇼', score: '98' },
-        team2: { name: 'Kenya', flag: '🇰🇪', score: '102' },
-        status: 'live',
-        format: 'ODI',
-        venue: 'Harare Sports Club',
-        startTime: '2026-05-08 12:00 CAT'
-    },
-    {
-        id: 8,
-        team1: { name: 'UAE', flag: '🇦🇪', score: '0' },
-        team2: { name: 'Oman', flag: '🇴🇲', score: '0' },
-        status: 'upcoming',
-        format: 'T20I',
-        venue: 'Dubai International Cricket Stadium',
-        startTime: '2026-05-11 18:00 GST'
-    }
+    outcome: "Royal Challengers Bengaluru won by 2 wickets"
+  }
+];
+
+// Display the most recent result in console
+const latest = iplMatchResults[0];
+console.log(`${latest.team1.short} vs ${latest.team2.short}: ${latest.outcome}`);
+
 ];
 
 let currentFilter = 'all';
